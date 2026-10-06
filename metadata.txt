@@ -6,14 +6,14 @@
 name=BDOO_GML
 qgisMinimumVersion=3.32
 description=This tool can be used to import BDOO shapefiles or GML/XML files and adds them in the QGIS canvas. Also, layers can be symbolized to be similar to the general geographic map in 1:250 000 scale. Data can be loaded from a directory, ZIP archive or Geoportal.
-version=2.1.0
+version=2.1.1
 author=Główny Urząd Geodezji i Kartografii (GUGiK) - Marcin Lebiecki
 email=marcin.lebiecki@gugik.gov.pl
 
 about=Oficjalna wtyczka Głównego Urzędu Geodezji i Kartografii
 
-tracker=https://github.com/MarcinLebiecki/BDOO_GML/issues
-repository=https://github.com/MarcinLebiecki/BDOO_GML
+tracker=https://github.com/GlownyUrzadGeodezjiIKartografii/BDOO_GML/issues
+repository=https://github.com/GlownyUrzadGeodezjiIKartografii/BDOO_GML
 # End of mandatory metadata
 
 # Recommended items:
@@ -21,6 +21,7 @@ repository=https://github.com/MarcinLebiecki/BDOO_GML
 hasProcessingProvider=no
 # Uncomment the following line and add your changelog:
 changelog=
+    2.1.1 Aktualizacja linków do repozytorium GitHub
     2.1.0 Dodano wybór katalogu lub pliku ZIP z danymi BDOO.
 		  Dodano pobieranie wojewódzkich paczek BDOO z Geoportalu dla bieżącego roku.
 		  Dodano możliwość pobrania i wczytania danych BDOO dla całego kraju.

@@ -8,7 +8,7 @@
                               -------------------
         begin                : 2020-07-20
         git sha              : $Format:%H$
-        copyright            : (C) 2024 by Marcin Lebiecki / Główny Urząd Geodezji i Kartografii
+        copyright            : (C) 2026 by Marcin Lebiecki / Główny Urząd Geodezji i Kartografii
         email                : marcin.lebiecki@gugik.gov.pl
  ***************************************************************************/
 
