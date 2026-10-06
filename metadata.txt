@@ -31,7 +31,7 @@ changelog=
 # Tags are comma separated with spaces allowed
 tags=python, BDOO, GML
 
-homepage=https://github.com/MarcinLebiecki/BDOO_GML
+homepage=https://github.com/GlownyUrzadGeodezjiIKartografii/BDOO_GML
 category=Plugins
 icon=icon400.jpg
 # experimental flag
