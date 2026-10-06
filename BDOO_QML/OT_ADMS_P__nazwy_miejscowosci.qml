@@ -9,7 +9,7 @@
   <renderer-v2 symbollevels="0" enableorderby="0" referencescale="-1" forceraster="0" type="nullSymbol"/>
   <labeling type="rule-based">
     <rules key="{fe58019d-af2a-4f00-bb94-66143f9b3914}">
-      <rule description="Miasto powyżej 1 000 000" key="{38717042-dbc4-4c2e-8fb0-34cd2c50b63a}" filter="&quot;liczbaMieszkancow&quot; > 1000000 and  &quot;rodzaj&quot; = 'miasto'">
+      <rule description="Miasto powyżej 1 000 000" key="{38717042-dbc4-4c2e-8fb0-34cd2c50b63a}" filter="&quot;liczbaMieszkancow&quot; >= 1000000 and  &quot;rodzaj&quot; = 'miasto'">
         <settings calloutType="simple">
           <text-style fontWeight="75" fontWordSpacing="0" allowHtml="0" fontFamily="Arial" textOpacity="1" textOrientation="horizontal" fontItalic="0" fontKerning="1" previewBkgrdColor="255,255,255,255" legendString="Aa" fontSizeUnit="MapUnit" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontLetterSpacing="0" textColor="0,0,0,255" fieldName=" upper( nazwa )" fontStrikeout="0" isExpression="1" fontSize="1800" fontUnderline="0" blendMode="0" namedStyle="Bold" multilineHeight="1">
             <families/>
@@ -129,7 +129,7 @@
           </text-style>
           <text-format useMaxLineLengthForAutoWrap="1" plussign="0" formatNumbers="0" addDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;" rightDirectionSymbol=">" autoWrapLength="0" reverseDirectionSymbol="0" wrapChar="" placeDirectionSymbol="0" decimals="3"/>
           <placement polygonPlacementFlags="2" offsetUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="6" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" offsetType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" rotationUnit="AngleDegrees" overrunDistanceUnit="MM" layerType="PointGeometry" dist="250" centroidWhole="0" rotationAngle="0" geometryGeneratorType="PointGeometry" xOffset="0" yOffset="0" repeatDistanceUnits="MM" lineAnchorType="0" geometryGenerator="" geometryGeneratorEnabled="0" distUnits="MapUnit" priority="10" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" quadOffset="4" maxCurvedCharAngleOut="-25" lineAnchorClipping="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" centroidInside="0" repeatDistance="0" lineAnchorPercent="0.5"/>
-          <rendering fontMaxPixelSize="10000" obstacle="0" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="0" scaleMax="0" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="1"/>
+          <rendering fontMaxPixelSize="10000" obstacle="0" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="1" scaleMax="500000" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="1"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -163,7 +163,7 @@
           </callout>
         </settings>
       </rule>
-      <rule description="miasto 500 000 - 1 000 000" key="{fba9aaf2-24cc-4171-bc98-c6afdc5bca37}" filter="&quot;liczbaMieszkancow&quot; > 500000 and  &quot;liczbaMieszkancow&quot;  &lt; 1000000 and  &quot;rodzaj&quot; = 'miasto'">
+      <rule description="miasto 500 000 - 1 000 000" key="{fba9aaf2-24cc-4171-bc98-c6afdc5bca37}" filter="&quot;liczbaMieszkancow&quot; >= 500000 and  &quot;liczbaMieszkancow&quot; &lt; 1000000 and  &quot;rodzaj&quot; = 'miasto'">
         <settings calloutType="simple">
           <text-style fontWeight="75" fontWordSpacing="0" allowHtml="0" fontFamily="Arial" textOpacity="1" textOrientation="horizontal" fontItalic="0" fontKerning="1" previewBkgrdColor="255,255,255,255" legendString="Aa" fontSizeUnit="MapUnit" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontLetterSpacing="0" textColor="0,0,0,255" fieldName=" upper( nazwa )" fontStrikeout="0" isExpression="1" fontSize="1640" fontUnderline="0" blendMode="0" namedStyle="Bold" multilineHeight="1">
             <families/>
@@ -283,7 +283,7 @@
           </text-style>
           <text-format useMaxLineLengthForAutoWrap="1" plussign="0" formatNumbers="0" addDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;" rightDirectionSymbol=">" autoWrapLength="0" reverseDirectionSymbol="0" wrapChar="" placeDirectionSymbol="0" decimals="3"/>
           <placement polygonPlacementFlags="2" offsetUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="6" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" offsetType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" rotationUnit="AngleDegrees" overrunDistanceUnit="MM" layerType="PointGeometry" dist="250" centroidWhole="0" rotationAngle="0" geometryGeneratorType="PointGeometry" xOffset="0" yOffset="0" repeatDistanceUnits="MM" lineAnchorType="0" geometryGenerator="" geometryGeneratorEnabled="0" distUnits="MapUnit" priority="10" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" quadOffset="4" maxCurvedCharAngleOut="-25" lineAnchorClipping="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" centroidInside="0" repeatDistance="0" lineAnchorPercent="0.5"/>
-          <rendering fontMaxPixelSize="10000" obstacle="0" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="0" scaleMax="0" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="1"/>
+          <rendering fontMaxPixelSize="10000" obstacle="0" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="1" scaleMax="500000" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="1"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -317,7 +317,7 @@
           </callout>
         </settings>
       </rule>
-      <rule description="Miasto 100 000 - 500 000" key="{c7a38039-f4ed-4e79-8312-b6ffe1ca2eaf}" filter="&quot;liczbaMieszkancow&quot; > 100000 and  &quot;liczbaMieszkancow&quot;  &lt; 500000 and  &quot;rodzaj&quot; = 'miasto'">
+      <rule description="Miasto 100 000 - 500 000" key="{c7a38039-f4ed-4e79-8312-b6ffe1ca2eaf}" filter="&quot;liczbaMieszkancow&quot; >= 100000 and  &quot;liczbaMieszkancow&quot; &lt; 500000 and  &quot;rodzaj&quot; = 'miasto'">
         <settings calloutType="simple">
           <text-style fontWeight="75" fontWordSpacing="0" allowHtml="0" fontFamily="Arial" textOpacity="1" textOrientation="horizontal" fontItalic="0" fontKerning="1" previewBkgrdColor="255,255,255,255" legendString="Aa" fontSizeUnit="MapUnit" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontLetterSpacing="0" textColor="0,0,0,255" fieldName=" upper( nazwa )" fontStrikeout="0" isExpression="1" fontSize="1480" fontUnderline="0" blendMode="0" namedStyle="Bold" multilineHeight="1">
             <families/>
@@ -437,7 +437,7 @@
           </text-style>
           <text-format useMaxLineLengthForAutoWrap="1" plussign="0" formatNumbers="0" addDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;" rightDirectionSymbol=">" autoWrapLength="0" reverseDirectionSymbol="0" wrapChar="" placeDirectionSymbol="0" decimals="3"/>
           <placement polygonPlacementFlags="2" offsetUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="6" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" offsetType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" rotationUnit="AngleDegrees" overrunDistanceUnit="MM" layerType="PointGeometry" dist="250" centroidWhole="0" rotationAngle="0" geometryGeneratorType="PointGeometry" xOffset="0" yOffset="0" repeatDistanceUnits="MM" lineAnchorType="0" geometryGenerator="" geometryGeneratorEnabled="0" distUnits="MapUnit" priority="10" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" quadOffset="4" maxCurvedCharAngleOut="-25" lineAnchorClipping="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" centroidInside="0" repeatDistance="0" lineAnchorPercent="0.5"/>
-          <rendering fontMaxPixelSize="10000" obstacle="0" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="0" scaleMax="0" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="1"/>
+          <rendering fontMaxPixelSize="10000" obstacle="0" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="1" scaleMax="500000" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="1"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -471,7 +471,7 @@
           </callout>
         </settings>
       </rule>
-      <rule description="Miasto 50 000 - 100 000" key="{d015965b-8fd9-483e-99f3-2ff3c982561c}" filter="&quot;liczbaMieszkancow&quot; > 50000 and&#xd;&#xa;  &quot;liczbaMieszkancow&quot;  &lt; 100000 and  &quot;rodzaj&quot; = 'miasto'">
+      <rule description="Miasto 50 000 - 100 000" key="{d015965b-8fd9-483e-99f3-2ff3c982561c}" filter="&quot;liczbaMieszkancow&quot; >= 50000 and  &quot;liczbaMieszkancow&quot; &lt; 100000 and  &quot;rodzaj&quot; = 'miasto'">
         <settings calloutType="simple">
           <text-style fontWeight="75" fontWordSpacing="0" allowHtml="0" fontFamily="Arial" textOpacity="1" textOrientation="horizontal" fontItalic="0" fontKerning="1" previewBkgrdColor="255,255,255,255" legendString="Aa" fontSizeUnit="MapUnit" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontLetterSpacing="0" textColor="0,0,0,255" fieldName=" upper( nazwa )" fontStrikeout="0" isExpression="1" fontSize="1380" fontUnderline="0" blendMode="0" namedStyle="Bold" multilineHeight="1">
             <families/>
@@ -591,7 +591,7 @@
           </text-style>
           <text-format useMaxLineLengthForAutoWrap="1" plussign="0" formatNumbers="0" addDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;" rightDirectionSymbol=">" autoWrapLength="0" reverseDirectionSymbol="0" wrapChar="" placeDirectionSymbol="0" decimals="3"/>
           <placement polygonPlacementFlags="2" offsetUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="6" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" offsetType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" rotationUnit="AngleDegrees" overrunDistanceUnit="MM" layerType="PointGeometry" dist="200" centroidWhole="0" rotationAngle="0" geometryGeneratorType="PointGeometry" xOffset="0" yOffset="0" repeatDistanceUnits="MM" lineAnchorType="0" geometryGenerator="" geometryGeneratorEnabled="0" distUnits="MapUnit" priority="10" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" quadOffset="4" maxCurvedCharAngleOut="-25" lineAnchorClipping="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" centroidInside="0" repeatDistance="0" lineAnchorPercent="0.5"/>
-          <rendering fontMaxPixelSize="10000" obstacle="0" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="0" scaleMax="0" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="1"/>
+          <rendering fontMaxPixelSize="10000" obstacle="0" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="1" scaleMax="500000" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="1"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -625,7 +625,7 @@
           </callout>
         </settings>
       </rule>
-      <rule description="Miasto 10 000 - 25 000" key="{5198e064-3e3e-472d-bbd7-9ced5a285a9b}" filter="&quot;liczbaMieszkancow&quot;  > 10000 and&#xd;&#xa;  &quot;liczbaMieszkancow&quot;  &lt; 25000 and  &quot;rodzaj&quot; = 'miasto'">
+      <rule description="Miasto 10 000 - 25 000" key="{5198e064-3e3e-472d-bbd7-9ced5a285a9b}" filter="&quot;liczbaMieszkancow&quot; >= 10000 and  &quot;liczbaMieszkancow&quot; &lt; 25000 and  &quot;rodzaj&quot; = 'miasto'">
         <settings calloutType="simple">
           <text-style fontWeight="75" fontWordSpacing="0" allowHtml="0" fontFamily="Arial" textOpacity="1" textOrientation="horizontal" fontItalic="0" fontKerning="1" previewBkgrdColor="255,255,255,255" legendString="Aa" fontSizeUnit="MapUnit" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontLetterSpacing="0" textColor="0,0,0,255" fieldName=" upper( nazwa )" fontStrikeout="0" isExpression="1" fontSize="1200" fontUnderline="0" blendMode="0" namedStyle="Bold" multilineHeight="1">
             <families/>
@@ -745,7 +745,7 @@
           </text-style>
           <text-format useMaxLineLengthForAutoWrap="1" plussign="0" formatNumbers="0" addDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;" rightDirectionSymbol=">" autoWrapLength="0" reverseDirectionSymbol="0" wrapChar="" placeDirectionSymbol="0" decimals="3"/>
           <placement polygonPlacementFlags="2" offsetUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="6" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" offsetType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" rotationUnit="AngleDegrees" overrunDistanceUnit="MM" layerType="PointGeometry" dist="200" centroidWhole="0" rotationAngle="0" geometryGeneratorType="PointGeometry" xOffset="0" yOffset="0" repeatDistanceUnits="MM" lineAnchorType="0" geometryGenerator="" geometryGeneratorEnabled="0" distUnits="MapUnit" priority="10" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" quadOffset="4" maxCurvedCharAngleOut="-25" lineAnchorClipping="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" centroidInside="0" repeatDistance="0" lineAnchorPercent="0.5"/>
-          <rendering fontMaxPixelSize="10000" obstacle="0" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="0" scaleMax="0" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="0.10000000000000001" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="1"/>
+          <rendering fontMaxPixelSize="10000" obstacle="0" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="1" scaleMax="500000" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="0.10000000000000001" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="1"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -779,7 +779,7 @@
           </callout>
         </settings>
       </rule>
-      <rule description="miasto 25 000 - 50 000" key="{ef19739e-b8fc-47b3-887e-a9d1e25a9f71}" filter="&quot;liczbaMieszkancow&quot;  > 25000 and&#xd;&#xa;  &quot;liczbaMieszkancow&quot;  &lt; 50000 and  &quot;rodzaj&quot; = 'miasto'">
+      <rule description="miasto 25 000 - 50 000" key="{ef19739e-b8fc-47b3-887e-a9d1e25a9f71}" filter="&quot;liczbaMieszkancow&quot; >= 25000 and  &quot;liczbaMieszkancow&quot; &lt; 50000 and  &quot;rodzaj&quot; = 'miasto'">
         <settings calloutType="simple">
           <text-style fontWeight="75" fontWordSpacing="0" allowHtml="0" fontFamily="Arial" textOpacity="1" textOrientation="horizontal" fontItalic="0" fontKerning="1" previewBkgrdColor="255,255,255,255" legendString="Aa" fontSizeUnit="MapUnit" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontLetterSpacing="0" textColor="0,0,0,255" fieldName=" upper(  &quot;nazwa&quot;  )" fontStrikeout="0" isExpression="1" fontSize="1275" fontUnderline="0" blendMode="0" namedStyle="Bold" multilineHeight="1">
             <families/>
@@ -899,7 +899,7 @@
           </text-style>
           <text-format useMaxLineLengthForAutoWrap="1" plussign="0" formatNumbers="0" addDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;" rightDirectionSymbol=">" autoWrapLength="0" reverseDirectionSymbol="0" wrapChar="" placeDirectionSymbol="0" decimals="3"/>
           <placement polygonPlacementFlags="2" offsetUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="6" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" offsetType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" rotationUnit="AngleDegrees" overrunDistanceUnit="MM" layerType="PointGeometry" dist="200" centroidWhole="0" rotationAngle="0" geometryGeneratorType="PointGeometry" xOffset="0" yOffset="0" repeatDistanceUnits="MM" lineAnchorType="0" geometryGenerator="" geometryGeneratorEnabled="0" distUnits="MapUnit" priority="9" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" quadOffset="4" maxCurvedCharAngleOut="-25" lineAnchorClipping="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" centroidInside="0" repeatDistance="0" lineAnchorPercent="0.5"/>
-          <rendering fontMaxPixelSize="10000" obstacle="0" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="0" scaleMax="0" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="1"/>
+          <rendering fontMaxPixelSize="10000" obstacle="0" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="1" scaleMax="500000" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="1"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -933,7 +933,7 @@
           </callout>
         </settings>
       </rule>
-      <rule description="Miasto 5 000 - 10 000" key="{4fa3b4d5-760e-42ba-b023-27b980df72b6}" filter="&quot;liczbaMieszkancow&quot;  > 5000 and&#xd;&#xa;  &quot;liczbaMieszkancow&quot;  &lt; 10000 and  &quot;rodzaj&quot; = 'miasto'">
+      <rule description="Miasto 5 000 - 10 000" key="{4fa3b4d5-760e-42ba-b023-27b980df72b6}" filter="&quot;liczbaMieszkancow&quot; >= 5000 and  &quot;liczbaMieszkancow&quot; &lt; 10000 and  &quot;rodzaj&quot; = 'miasto'">
         <settings calloutType="simple">
           <text-style fontWeight="75" fontWordSpacing="0" allowHtml="0" fontFamily="Arial" textOpacity="1" textOrientation="horizontal" fontItalic="0" fontKerning="1" previewBkgrdColor="255,255,255,255" legendString="Aa" fontSizeUnit="MapUnit" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontLetterSpacing="0" textColor="0,0,0,255" fieldName=" upper(  &quot;nazwa&quot;  )" fontStrikeout="0" isExpression="1" fontSize="1144" fontUnderline="0" blendMode="0" namedStyle="Bold" multilineHeight="1">
             <families/>
@@ -1053,7 +1053,7 @@
           </text-style>
           <text-format useMaxLineLengthForAutoWrap="1" plussign="0" formatNumbers="0" addDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;" rightDirectionSymbol=">" autoWrapLength="0" reverseDirectionSymbol="0" wrapChar="" placeDirectionSymbol="0" decimals="3"/>
           <placement polygonPlacementFlags="2" offsetUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="6" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" offsetType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" rotationUnit="AngleDegrees" overrunDistanceUnit="MM" layerType="PointGeometry" dist="200" centroidWhole="0" rotationAngle="0" geometryGeneratorType="PointGeometry" xOffset="0" yOffset="0" repeatDistanceUnits="MM" lineAnchorType="0" geometryGenerator="" geometryGeneratorEnabled="0" distUnits="MapUnit" priority="9" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" quadOffset="4" maxCurvedCharAngleOut="-25" lineAnchorClipping="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" centroidInside="0" repeatDistance="0" lineAnchorPercent="0.5"/>
-          <rendering fontMaxPixelSize="10000" obstacle="0" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="0" scaleMax="0" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="2" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="1"/>
+          <rendering fontMaxPixelSize="10000" obstacle="0" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="1" scaleMax="500000" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="2" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="1"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1087,7 +1087,7 @@
           </callout>
         </settings>
       </rule>
-      <rule description="Miasto poniżej 5000" key="{c1bc0fd4-7f4e-4448-896a-fb27f8c06a8d}" filter="&quot;liczbaMieszkancow&quot;  &lt; 5000 and  &quot;rodzaj&quot; = 'miasto'">
+      <rule description="Miasto poniżej 5000" key="{c1bc0fd4-7f4e-4448-896a-fb27f8c06a8d}" filter="&quot;liczbaMieszkancow&quot; &lt; 5000 and  &quot;rodzaj&quot; = 'miasto'">
         <settings calloutType="simple">
           <text-style fontWeight="75" fontWordSpacing="0" allowHtml="0" fontFamily="Arial" textOpacity="1" textOrientation="horizontal" fontItalic="0" fontKerning="1" previewBkgrdColor="255,255,255,255" legendString="Aa" fontSizeUnit="MapUnit" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontLetterSpacing="0" textColor="0,0,0,255" fieldName=" upper(  &quot;nazwa&quot;  )" fontStrikeout="0" isExpression="1" fontSize="1090" fontUnderline="0" blendMode="0" namedStyle="Bold" multilineHeight="1">
             <families/>
@@ -1207,7 +1207,7 @@
           </text-style>
           <text-format useMaxLineLengthForAutoWrap="1" plussign="0" formatNumbers="0" addDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;" rightDirectionSymbol=">" autoWrapLength="0" reverseDirectionSymbol="0" wrapChar="" placeDirectionSymbol="0" decimals="3"/>
           <placement polygonPlacementFlags="2" offsetUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="6" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" offsetType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" rotationUnit="AngleDegrees" overrunDistanceUnit="MM" layerType="PointGeometry" dist="150" centroidWhole="0" rotationAngle="0" geometryGeneratorType="PointGeometry" xOffset="0" yOffset="0" repeatDistanceUnits="MM" lineAnchorType="0" geometryGenerator="" geometryGeneratorEnabled="0" distUnits="MapUnit" priority="8" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" quadOffset="4" maxCurvedCharAngleOut="-25" lineAnchorClipping="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" centroidInside="0" repeatDistance="0" lineAnchorPercent="0.5"/>
-          <rendering fontMaxPixelSize="10000" obstacle="0" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="0" scaleMax="0" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="1"/>
+          <rendering fontMaxPixelSize="10000" obstacle="0" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="1" scaleMax="500000" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="1"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1241,7 +1241,7 @@
           </callout>
         </settings>
       </rule>
-      <rule description="Wieś pow 2000" key="{0ce8ff3f-da0d-42ee-8ca0-b884d92c12d2}" filter="&quot;liczbaMieszkancow&quot;  > 2000 and  &quot;rodzaj&quot; = 'wieś'">
+      <rule description="Wieś pow 2000" key="{0ce8ff3f-da0d-42ee-8ca0-b884d92c12d2}" filter="&quot;liczbaMieszkancow&quot; >= 2000 and  &quot;rodzaj&quot; = 'wieś'">
         <settings calloutType="simple">
           <text-style fontWeight="50" fontWordSpacing="0" allowHtml="0" fontFamily="Arial" textOpacity="1" textOrientation="horizontal" fontItalic="0" fontKerning="1" previewBkgrdColor="255,255,255,255" legendString="Aa" fontSizeUnit="MapUnit" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontLetterSpacing="0" textColor="0,0,0,255" fieldName="nazwa" fontStrikeout="0" isExpression="0" fontSize="880" fontUnderline="0" blendMode="0" namedStyle="Normal" multilineHeight="1">
             <families/>
@@ -1361,7 +1361,7 @@
           </text-style>
           <text-format useMaxLineLengthForAutoWrap="1" plussign="0" formatNumbers="0" addDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;" rightDirectionSymbol=">" autoWrapLength="0" reverseDirectionSymbol="0" wrapChar="" placeDirectionSymbol="0" decimals="3"/>
           <placement polygonPlacementFlags="2" offsetUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="6" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" offsetType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" rotationUnit="AngleDegrees" overrunDistanceUnit="MM" layerType="PointGeometry" dist="150" centroidWhole="0" rotationAngle="0" geometryGeneratorType="PointGeometry" xOffset="0" yOffset="0" repeatDistanceUnits="MM" lineAnchorType="0" geometryGenerator="" geometryGeneratorEnabled="0" distUnits="MapUnit" priority="7" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" quadOffset="4" maxCurvedCharAngleOut="-25" lineAnchorClipping="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" centroidInside="0" repeatDistance="0" lineAnchorPercent="0.5"/>
-          <rendering fontMaxPixelSize="10000" obstacle="1" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="0" scaleMax="0" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="0"/>
+          <rendering fontMaxPixelSize="10000" obstacle="1" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="1" scaleMax="500000" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="0"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1395,7 +1395,7 @@
           </callout>
         </settings>
       </rule>
-      <rule description="Wieś 1000 - 2000" key="{db32c2cf-79b0-4161-b0ee-fb0e83883158}" filter="&quot;liczbaMieszkancow&quot;  > 999 and &quot;liczbaMieszkancow&quot;  &lt; 2000  and  &quot;rodzaj&quot; = 'wieś'">
+      <rule description="Wieś 1000 - 2000" key="{db32c2cf-79b0-4161-b0ee-fb0e83883158}" filter="&quot;liczbaMieszkancow&quot; >= 1000 and  &quot;liczbaMieszkancow&quot; &lt; 2000 and  &quot;rodzaj&quot; = 'wieś'">
         <settings calloutType="simple">
           <text-style fontWeight="50" fontWordSpacing="0" allowHtml="0" fontFamily="Arial" textOpacity="1" textOrientation="horizontal" fontItalic="0" fontKerning="1" previewBkgrdColor="255,255,255,255" legendString="Aa" fontSizeUnit="MapUnit" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontLetterSpacing="0" textColor="0,0,0,255" fieldName="nazwa" fontStrikeout="0" isExpression="0" fontSize="780" fontUnderline="0" blendMode="0" namedStyle="Normal" multilineHeight="1">
             <families/>
@@ -1515,7 +1515,7 @@
           </text-style>
           <text-format useMaxLineLengthForAutoWrap="1" plussign="0" formatNumbers="0" addDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;" rightDirectionSymbol=">" autoWrapLength="0" reverseDirectionSymbol="0" wrapChar="" placeDirectionSymbol="0" decimals="3"/>
           <placement polygonPlacementFlags="2" offsetUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="6" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" offsetType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" rotationUnit="AngleDegrees" overrunDistanceUnit="MM" layerType="PointGeometry" dist="150" centroidWhole="0" rotationAngle="0" geometryGeneratorType="PointGeometry" xOffset="0" yOffset="0" repeatDistanceUnits="MM" lineAnchorType="0" geometryGenerator="" geometryGeneratorEnabled="0" distUnits="MapUnit" priority="7" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" quadOffset="4" maxCurvedCharAngleOut="-25" lineAnchorClipping="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" centroidInside="0" repeatDistance="0" lineAnchorPercent="0.5"/>
-          <rendering fontMaxPixelSize="10000" obstacle="1" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="0" scaleMax="0" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="0"/>
+          <rendering fontMaxPixelSize="10000" obstacle="1" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="1" scaleMax="500000" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="0"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1549,7 +1549,7 @@
           </callout>
         </settings>
       </rule>
-      <rule description="Wieś 500 - 1000" key="{5bb5b994-364f-43a4-b04f-2305a3325e08}" filter="&quot;liczbaMieszkancow&quot;  > 499 and &quot;liczbaMieszkancow&quot;  &lt; 1000  and  &quot;rodzaj&quot; = 'wieś'">
+      <rule description="Wieś 500 - 1000" key="{5bb5b994-364f-43a4-b04f-2305a3325e08}" filter="&quot;liczbaMieszkancow&quot; >= 500 and  &quot;liczbaMieszkancow&quot; &lt; 1000 and  &quot;rodzaj&quot; = 'wieś'">
         <settings calloutType="simple">
           <text-style fontWeight="50" fontWordSpacing="0" allowHtml="0" fontFamily="Arial" textOpacity="1" textOrientation="horizontal" fontItalic="0" fontKerning="1" previewBkgrdColor="255,255,255,255" legendString="Aa" fontSizeUnit="MapUnit" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontLetterSpacing="0" textColor="0,0,0,255" fieldName="nazwa" fontStrikeout="0" isExpression="0" fontSize="728" fontUnderline="0" blendMode="0" namedStyle="Normal" multilineHeight="1">
             <families/>
@@ -1669,7 +1669,7 @@
           </text-style>
           <text-format useMaxLineLengthForAutoWrap="1" plussign="0" formatNumbers="0" addDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;" rightDirectionSymbol=">" autoWrapLength="0" reverseDirectionSymbol="0" wrapChar="" placeDirectionSymbol="0" decimals="3"/>
           <placement polygonPlacementFlags="2" offsetUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="6" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" offsetType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" rotationUnit="AngleDegrees" overrunDistanceUnit="MM" layerType="PointGeometry" dist="150" centroidWhole="0" rotationAngle="0" geometryGeneratorType="PointGeometry" xOffset="0" yOffset="0" repeatDistanceUnits="MM" lineAnchorType="0" geometryGenerator="" geometryGeneratorEnabled="0" distUnits="MapUnit" priority="5" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" quadOffset="4" maxCurvedCharAngleOut="-25" lineAnchorClipping="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" centroidInside="0" repeatDistance="0" lineAnchorPercent="0.5"/>
-          <rendering fontMaxPixelSize="10000" obstacle="1" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="0" scaleMax="0" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="0"/>
+          <rendering fontMaxPixelSize="10000" obstacle="1" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="1" scaleMax="500000" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="0"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1703,7 +1703,7 @@
           </callout>
         </settings>
       </rule>
-      <rule description="Wieś 250 - 500" key="{26a7421d-c9f3-4c2f-a529-cb745c7bd0e3}" filter="&quot;liczbaMieszkancow&quot;  > 259 and &quot;liczbaMieszkancow&quot;  &lt; 500  and  &quot;rodzaj&quot; = 'wieś'">
+      <rule description="Wieś 250 - 500" key="{26a7421d-c9f3-4c2f-a529-cb745c7bd0e3}" filter="&quot;liczbaMieszkancow&quot; >= 250 and  &quot;liczbaMieszkancow&quot; &lt; 500 and  &quot;rodzaj&quot; = 'wieś'">
         <settings calloutType="simple">
           <text-style fontWeight="50" fontWordSpacing="0" allowHtml="0" fontFamily="Arial" textOpacity="1" textOrientation="horizontal" fontItalic="0" fontKerning="1" previewBkgrdColor="255,255,255,255" legendString="Aa" fontSizeUnit="MapUnit" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontLetterSpacing="0" textColor="0,0,0,255" fieldName="nazwa" fontStrikeout="0" isExpression="0" fontSize="700" fontUnderline="0" blendMode="0" namedStyle="Normal" multilineHeight="1">
             <families/>
@@ -1823,7 +1823,7 @@
           </text-style>
           <text-format useMaxLineLengthForAutoWrap="1" plussign="0" formatNumbers="0" addDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;" rightDirectionSymbol=">" autoWrapLength="0" reverseDirectionSymbol="0" wrapChar="" placeDirectionSymbol="0" decimals="3"/>
           <placement polygonPlacementFlags="2" offsetUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="6" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" offsetType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" rotationUnit="AngleDegrees" overrunDistanceUnit="MM" layerType="PointGeometry" dist="150" centroidWhole="0" rotationAngle="0" geometryGeneratorType="PointGeometry" xOffset="0" yOffset="0" repeatDistanceUnits="MM" lineAnchorType="0" geometryGenerator="" geometryGeneratorEnabled="0" distUnits="MapUnit" priority="5" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" quadOffset="4" maxCurvedCharAngleOut="-25" lineAnchorClipping="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" centroidInside="0" repeatDistance="0" lineAnchorPercent="0.5"/>
-          <rendering fontMaxPixelSize="10000" obstacle="1" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="0" scaleMax="0" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="0"/>
+          <rendering fontMaxPixelSize="10000" obstacle="1" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="1" scaleMax="500000" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="0"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1857,7 +1857,7 @@
           </callout>
         </settings>
       </rule>
-      <rule description="Wieś 100 - 250" key="{4b9c1497-0179-472b-93c0-bd2fb9299386}" filter="&quot;liczbaMieszkancow&quot;  > 99 and &quot;liczbaMieszkancow&quot;  &lt; 260  and  &quot;rodzaj&quot; = 'wieś'">
+      <rule description="Wieś 100 - 250" key="{4b9c1497-0179-472b-93c0-bd2fb9299386}" filter="&quot;liczbaMieszkancow&quot; >= 100 and  &quot;liczbaMieszkancow&quot; &lt; 250 and  &quot;rodzaj&quot; = 'wieś'">
         <settings calloutType="simple">
           <text-style fontWeight="50" fontWordSpacing="0" allowHtml="0" fontFamily="Arial" textOpacity="1" textOrientation="horizontal" fontItalic="0" fontKerning="1" previewBkgrdColor="255,255,255,255" legendString="Aa" fontSizeUnit="MapUnit" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontLetterSpacing="0" textColor="0,0,0,255" fieldName="nazwa" fontStrikeout="0" isExpression="0" fontSize="650" fontUnderline="0" blendMode="0" namedStyle="Normal" multilineHeight="1">
             <families/>
@@ -1977,7 +1977,7 @@
           </text-style>
           <text-format useMaxLineLengthForAutoWrap="1" plussign="0" formatNumbers="0" addDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;" rightDirectionSymbol=">" autoWrapLength="0" reverseDirectionSymbol="0" wrapChar="" placeDirectionSymbol="0" decimals="3"/>
           <placement polygonPlacementFlags="2" offsetUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="6" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" offsetType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" rotationUnit="AngleDegrees" overrunDistanceUnit="MM" layerType="PointGeometry" dist="100" centroidWhole="0" rotationAngle="0" geometryGeneratorType="PointGeometry" xOffset="0" yOffset="0" repeatDistanceUnits="MM" lineAnchorType="0" geometryGenerator="" geometryGeneratorEnabled="0" distUnits="MapUnit" priority="5" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" quadOffset="4" maxCurvedCharAngleOut="-25" lineAnchorClipping="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" centroidInside="0" repeatDistance="0" lineAnchorPercent="0.5"/>
-          <rendering fontMaxPixelSize="10000" obstacle="1" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="0" scaleMax="0" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="0"/>
+          <rendering fontMaxPixelSize="10000" obstacle="1" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="1" scaleMax="500000" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="0"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -2011,7 +2011,7 @@
           </callout>
         </settings>
       </rule>
-      <rule description="Wieś poniżej 100" key="{b5dd8520-9953-4834-811c-786dd25653b3}" filter="&quot;liczbaMieszkancow&quot;  &lt; 100  and  &quot;rodzaj&quot; = 'wieś'">
+      <rule description="Wieś poniżej 100" key="{b5dd8520-9953-4834-811c-786dd25653b3}" filter="&quot;liczbaMieszkancow&quot; &lt; 100 and  &quot;rodzaj&quot; = 'wieś'">
         <settings calloutType="simple">
           <text-style fontWeight="50" fontWordSpacing="0" allowHtml="0" fontFamily="Arial" textOpacity="1" textOrientation="horizontal" fontItalic="0" fontKerning="1" previewBkgrdColor="255,255,255,255" legendString="Aa" fontSizeUnit="MapUnit" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontLetterSpacing="0" textColor="0,0,0,255" fieldName="nazwa" fontStrikeout="0" isExpression="0" fontSize="600" fontUnderline="0" blendMode="0" namedStyle="Normal" multilineHeight="1">
             <families/>
@@ -2131,7 +2131,7 @@
           </text-style>
           <text-format useMaxLineLengthForAutoWrap="1" plussign="0" formatNumbers="0" addDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;" rightDirectionSymbol=">" autoWrapLength="0" reverseDirectionSymbol="0" wrapChar="" placeDirectionSymbol="0" decimals="3"/>
           <placement polygonPlacementFlags="2" offsetUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="6" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" offsetType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" rotationUnit="AngleDegrees" overrunDistanceUnit="MM" layerType="PointGeometry" dist="100" centroidWhole="0" rotationAngle="0" geometryGeneratorType="PointGeometry" xOffset="0" yOffset="0" repeatDistanceUnits="MM" lineAnchorType="0" geometryGenerator="" geometryGeneratorEnabled="0" distUnits="MapUnit" priority="5" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" quadOffset="4" maxCurvedCharAngleOut="-25" lineAnchorClipping="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" centroidInside="0" repeatDistance="0" lineAnchorPercent="0.5"/>
-          <rendering fontMaxPixelSize="10000" obstacle="1" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="0" scaleMax="0" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="0"/>
+          <rendering fontMaxPixelSize="10000" obstacle="1" fontLimitPixelSize="0" maxNumLabels="2000" zIndex="0" scaleMin="0" obstacleType="0" scaleVisibility="1" scaleMax="500000" upsidedownLabels="0" unplacedVisibility="0" mergeLines="0" minFeatureSize="0" obstacleFactor="1" labelPerPart="0" fontMinPixelSize="3" drawLabels="1" limitNumLabels="0" displayAll="0"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
